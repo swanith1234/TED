@@ -1,0 +1,50 @@
+#about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.about-text {
+  width: 50%;
+}
+
+.about-text h2 {
+  font-size: 22px;
+  color: #333;
+  font-weight: normal;
+}
+
+.tedx-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.location {
+  width: 45%;
+}
+
+#map {
+  height: 200px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.location p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.more-events {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}

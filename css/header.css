@@ -1,0 +1,150 @@
+header {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 5rem;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: auto;
+  max-height: 40px;
+  width: auto;
+  color: #666; /* Matching the original tagline's color */
+  font-family: Arial, sans-serif; /* Use a clean sans-serif font */
+  white-space: nowrap; /* Prevents text wrapping */
+}
+
+.tagline {
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links li a:hover {
+  color: #e62b1e;
+}
+
+.get-tickets {
+  background-color: #e62b1e;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.get-tickets:hover {
+  background-color: #c9221a;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: black;
+  padding-right: 4vw;
+}
+
+.mobile-nav {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.mobile-nav.active {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobile-nav li {
+  margin: 10px 0;
+  animation: slideIn 0.3s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 10px 3%;
+  }
+  .logo img {
+    max-height: 35px;
+  }
+  .nav-links {
+    gap: 15px;
+  }
+  .nav-links li a {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    font-size: 1.5rem;
+  }
+  .logo img {
+    max-height: 30px;
+  }
+}

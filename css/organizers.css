@@ -1,0 +1,24 @@
+.organizers-section {
+  padding: 50px;
+}
+
+.organizers-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+}
+
+.organizer {
+  width: 200px;
+  text-align: center;
+}
+
+.organizer img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.organizer h3 {
+  font-size: 1.2rem;
+}

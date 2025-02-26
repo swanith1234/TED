@@ -1,0 +1,75 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* Hero Section */
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container: Split into Left and Right */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+/* Left Section: Event Details */
+.event-details {
+  max-width: 50%;
+}
+
+.tedx-red {
+  color: red;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.independently-organized {
+  font-size: 0.9rem;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.theme {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.event-date,
+.event-time,
+.event-location {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Right Section: Countdown Timer */
+.countdown-timer {
+  text-align: center;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.timer {
+  display: flex;
+  gap: 15px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.timer div {
+  background-color: red;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}

@@ -1,0 +1,65 @@
+/* Footer styling */
+footer {
+  background-color: white;
+  color: black;
+  padding: 40px 80px;
+  border-top: 3px solid red;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-logo {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.newsletter p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.subscribe-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.subscribe-btn:hover {
+  background-color: #333;
+}
