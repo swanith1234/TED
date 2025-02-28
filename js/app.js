@@ -21,13 +21,13 @@ function toggleMenu() {
 console.log("Starting");
 // Load each section into the main HTML
 document.addEventListener("DOMContentLoaded", function () {
-  loadHTML("header-container", "header.html");
-  loadHTML("hero-container", "hero.html");
-  loadHTML("about-container", "about.html");
-  loadHTML("speakers-container", "speakers.html");
-  loadHTML("timeline-container", "timeline.html");
-  loadHTML("contact-container", "contact.html");
-  loadHTML("footer-container", "footer.html");
+  loadHTML("header-container", "../html/header.html");
+  loadHTML("hero-container", "../html/hero.html");
+  loadHTML("about-container", "../html/about.html");
+  loadHTML("speakers-container", "../html/speakers.html");
+  loadHTML("timeline-container", "../html/timeline.html");
+  loadHTML("contact-container", "../html/contact.html");
+  loadHTML("footer-container", "../html/footer.html");
 });
 function loadScript(src) {
   return new Promise((resolve, reject) => {
